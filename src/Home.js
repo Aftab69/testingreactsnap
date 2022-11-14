@@ -28,7 +28,7 @@ const Home = () => {
   useEffect(()=>{
     document.body.style.overflowY = "hidden";
     disableScrolling()
-    setTimeout( loadingfunc , 1000)
+    setTimeout( loadingfunc , 10000)
     // eslint-disable-next-line
   },[])
 
