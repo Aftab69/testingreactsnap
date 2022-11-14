@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import "./Home.css"
 import useMediaQuery from "./useMediaQuery"
-// import showreel from "./Images/Showreel.mp4"
-// import showreelmobile from "./Images/showreelmobile.mp4"
+import showreel from "./Images/Showreel.mp4"
+import showreelmobile from "./Images/showreelmobile.mp4"
 import loadinggif from "./Images/loading.gif"
 import logo from "./Images/logo.png"
 import icon1 from "./Images/scrolltopicon.png"
@@ -43,9 +43,7 @@ const Home = () => {
     {(matches) ? 
     <div>
     <div id='homepage' className='homepageContainer'>
-      <video width="auto" height="auto" autoPlay loop muted >
-        <source src="https://youtu.be/siXxsNosnGs" type="video/mp4" />
-      </video>
+    <video src={showreel} autoPlay loop muted />
     </div>
     <div className='showreelButtonContainer'>
       <a href='https://www.youtube.com/watch?v=siXxsNosnGs' target="_blank" rel="noreferrer"><button id='showreelButton'>WATCH SHOWREEL</button></a>
@@ -57,9 +55,7 @@ const Home = () => {
     :
     <div>
     <div id='homepage' className='homepageContainer'>
-      <video width="auto" height="auto" autoPlay loop muted >
-        <source src="https://youtu.be/siXxsNosnGs" type="video/mp4" />
-      </video>
+    <video src={showreelmobile} autoPlay loop muted />
     </div>
     <div className='showreelButtonContainerMobile'>
       <a href='https://www.youtube.com/watch?v=siXxsNosnGs' target="_blank" rel="noreferrer"><button id='showreelButton'>WATCH SHOWREEL</button></a>
