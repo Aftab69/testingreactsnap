@@ -1,0 +1,75 @@
+body{
+    background-color: white;
+}
+.categoryvideosBackground{
+    width: 100%;
+    min-height: 100vh;
+}
+.categoryvideosHeading{
+    padding: 0 20px;
+    width: 100%;
+    min-height: 10vh;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: 'Inter Tight', sans-serif;
+}
+.categoryvideosHeading>p{
+    font-family: 'Josefin Sans', sans-serif;
+    margin-left: 20px;
+}
+.filterContainer{
+    width: 100%;
+    min-height: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.categoryvideosContent{
+    width: 100%;
+    min-height: 90vh;
+    margin: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.eachCategoryVideo{
+    margin: 20px;
+}
+@media only screen and (max-width:768px) {
+    .categoryvideosHeading>p{
+        font-size: 0.9rem;
+    }
+    button{
+        font-size: 0.75rem;
+        padding: 10px;
+    }
+    #longButton{
+        margin-left: 10px;
+    }
+}
+@media only screen and (min-width: 1921px) and (max-width: 2880px){
+    .categoryvideosHeading>p{
+        font-size: 1.25rem;
+    }
+    button{
+        font-size: 1rem;
+        padding: 15px;
+    }
+}
+@media only screen and (min-width: 2881px){
+    .categoryvideosHeading>p{
+        font-size: 1.5rem;
+    }
+    button{
+        font-size: 1rem;
+        padding: 20px;
+    }
+}

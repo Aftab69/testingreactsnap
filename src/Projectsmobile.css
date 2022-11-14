@@ -1,0 +1,47 @@
+.projectsmobilepageContainer{
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Inter Tight', sans-serif;
+}
+.projectsmobilepageHeading{
+    border-top: 2px solid white;
+    background-color: black;
+    width: 100%;
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.projectsmobilepageHeading>p{
+    color: white;
+    font-size: 1.5rem;
+}
+.projectsmobilepageContent{
+    background-color: white;
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.projectsmobilepageContent>a>button{
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+}
+.projectsmobilepageContent>a>button:hover{
+    cursor: pointer;
+    background-color: rgb(39, 39, 39);
+}
+.eachVideoMobile{
+    margin: 20px 0;
+}
+
+@media only screen and (max-width:320px) {
+    .eachVideoMobile{
+        transform: scale(0.9);
+    }
+}
