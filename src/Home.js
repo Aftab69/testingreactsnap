@@ -41,7 +41,7 @@ const Home = () => {
   return (
     <>
     {(matches) ? 
-    <>
+    <div>
     <div id='homepage' className='homepageContainer'>
       <video src={showreel} width="auto" height="auto" autoPlay loop muted>
       </video>
@@ -52,9 +52,9 @@ const Home = () => {
     <div className='scrolltotopContainer'>
       <img onClick={handleTop} src={icon1} alt={icon1} />
     </div>
-    </>
+    </div>
     :
-    <>
+    <div>
     <div id='homepage' className='homepageContainer'>
       <video src={showreelmobile} width="auto" height="auto" autoPlay loop muted>
       </video>
@@ -62,7 +62,7 @@ const Home = () => {
     <div className='showreelButtonContainerMobile'>
       <a href='https://www.youtube.com/watch?v=siXxsNosnGs' target="_blank" rel="noreferrer"><button id='showreelButton'>WATCH SHOWREEL</button></a>
     </div>
-    </>
+    </div>
     }
        
     {/* { loading === true ?
