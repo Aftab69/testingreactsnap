@@ -43,7 +43,7 @@ const Home = () => {
     {(matches) ? 
     <div>
     <div id='homepage' className='homepageContainer'>
-      <video src={showreel} width="auto" height="auto" controls autoPlay loop muted>
+      <video src={showreel} width="auto" height="auto" autoPlay loop muted>
       </video>
     </div>
     <div className='showreelButtonContainer'>
@@ -56,7 +56,7 @@ const Home = () => {
     :
     <div>
     <div id='homepage' className='homepageContainer'>
-      <video src={showreelmobile} width="auto" height="auto" controls autoPlay loop muted>
+      <video src={showreelmobile} width="auto" height="auto" autoPlay loop muted>
       </video>
     </div>
     <div className='showreelButtonContainerMobile'>
