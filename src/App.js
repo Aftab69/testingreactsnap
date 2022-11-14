@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet";
-import { useRef, useState, useEffect } from "react";
+import { useRef } from "react";
 // import useMediaQuery from "./useMediaQuery";
 import Navbar from "./Navbar";
 import Home from "./Home";
@@ -7,7 +7,7 @@ import Services from "./Services";
 import Projects from "./Projects";
 import About from "./About";
 import Contact from "./Contact";
-import Projectsmobile from "./Projectsmobile";
+// import Projectsmobile from "./Projectsmobile";
 import About2 from "./About2";
 
 function App() {
@@ -17,16 +17,15 @@ function App() {
   const about = useRef(null)
   const contact = useRef(null)
 
-  const breakpoint = 768;
-  const [size, setSize] = useState({
-    x: window.innerWidth
-  });
-  const updateSize = () =>
-    setSize({
-      x: window.innerWidth
-    });
-  useEffect(() => (window.onresize = updateSize), []);
-  console.log(window.innerWidth)
+  // const breakpoint = 768;
+  // const [size, setSize] = useState({
+  //   x: window.innerWidth
+  // });
+  // const updateSize = () =>
+  //   setSize({
+  //     x: window.innerWidth
+  //   });
+  // useEffect(() => (window.onresize = updateSize), []);
   return (
     <>
       <Helmet>
@@ -37,11 +36,11 @@ function App() {
       <Navbar services={services}  projects={projects} about={about} contact={contact} />
       <Home />
       <Services services={services} />
-      {(size.x > breakpoint) ?
+      {/* {(size.x > breakpoint) ? */}
       <Projects projects={projects} /> 
-      :
-      <Projectsmobile projects={projects} />
-      }
+      {/* :
+      <Projectsmobile projects={projects} /> */}
+      {/* } */}
       <About about={about} />
       <About2 />
       <Contact contact={contact} />
