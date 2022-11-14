@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet";
 import { useRef } from "react";
-import useMediaQuery from "./useMediaQuery";
+// import useMediaQuery from "./useMediaQuery";
 import Navbar from "./Navbar";
 import Home from "./Home";
 import Services from "./Services";
@@ -17,7 +17,7 @@ function App() {
   const about = useRef(null)
   const contact = useRef(null)
 
-  const matches = useMediaQuery("(min-width: 769px)");
+  // const matches = useMediaQuery("(min-width: 769px)");
   return (
     <>
       <Helmet>
@@ -28,10 +28,11 @@ function App() {
       <Navbar services={services}  projects={projects} about={about} contact={contact} />
       <Home />
       <Services services={services} />
-      {(matches)?
-      <Projects projects={projects} /> :
+      {/* {(matches)? */}
+      <Projects projects={projects} /> 
+      {/* :
       <Projectsmobile projects={projects} />
-      }
+      } */}
       <About about={about} />
       <About2 />
       <Contact contact={contact} />
