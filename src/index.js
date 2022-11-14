@@ -1,5 +1,5 @@
 import React from 'react';
-import { render } from 'react-snapshot';
+import { hydrate, render } from "react-dom";
 import './index.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
@@ -46,7 +46,7 @@ const pageheading3 = "FASHION FILMS"
 const pageheading4 = "SHORT / DOCUMENTARY / TRAVEL FILMS"
 const pageheading5 = "BEHIND THE SCENES"
 
-render(
+const APP = (
     <BrowserRouter>
         <Routes>
             <Route exact path='/' element={<App />} />
@@ -56,6 +56,12 @@ render(
             <Route exact path='/shortdocumentarytravelfilms' element={<Categoryvideos data={shortFilms} pageheading={pageheading4} />}/>
             <Route exact path='/behindthescenes' element={<Categoryvideos data={behindTheScenes} pageheading={pageheading5} />}/>
         </Routes>
-    </BrowserRouter>,
-    document.getElementById('root')
+    </BrowserRouter>
 );
+
+const rootElement = document.getElementById("root");
+if (rootElement.hasChildNodes()) {
+  hydrate(APP, rootElement);
+} else {
+  render(APP, rootElement);
+}
