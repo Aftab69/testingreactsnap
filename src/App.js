@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet";
 import { useRef } from "react";
-import useMediaQuery from "./useMediaQuery";
+// import useMediaQuery from "./useMediaQuery";
 import Navbar from "./Navbar"
 import Home from "./Home";
 import Services from "./Services"
