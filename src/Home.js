@@ -54,7 +54,7 @@ const Home = () => {
     </div>
     :
     <div>
-    <div id='homepage' className='homepageContainer'>
+    <div  id='homepage' className='homepageContainer'>
     <video src={showreelmobile} autoPlay loop muted />
     </div>
     <div className='showreelButtonContainerMobile'>

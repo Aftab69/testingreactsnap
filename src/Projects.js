@@ -16,7 +16,7 @@ const Projects = (props) => {
             <div className='videoCategoryHeading'><p>Music Videos :</p></div>
             <div className='videosOuterContainer'>
               <div className='videosInnerContainer' id='videosofbutton1'>
-                  <Zoom><ReactPlayer className='eachVideo' url='https://www.youtube.com/watch?v=-bpQpsO7mWs' controls width="720px" height="480px" /></Zoom>
+                  <Zoom><ReactPlayer className='eachVideo' url='https://www.youtube.com/watch?v=-bpQpsO7mWs' muted width="720px" height="480px" playing={true} /></Zoom>
                   <Zoom><ReactPlayer className='eachVideo' url='https://www.youtube.com/watch?v=POuwAy2JTLk' controls width="720px" height="480px" /></Zoom>
                 </div>
                 <Link style={{textDecoration:"none"}} to="/musicvideos"><button name="button1" id="button1" style={{display:"block"}}>View more</button></Link>
