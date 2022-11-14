@@ -7,7 +7,7 @@ import Services from "./Services";
 import Projects from "./Projects";
 import About from "./About";
 import Contact from "./Contact";
-import Projectsmobile from "./Projectsmobile";
+// import Projectsmobile from "./Projectsmobile";
 import About2 from "./About2";
 
 function App() {
