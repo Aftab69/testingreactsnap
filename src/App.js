@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet";
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 // import useMediaQuery from "./useMediaQuery";
 import Navbar from "./Navbar";
 import Home from "./Home";
@@ -17,15 +17,15 @@ function App() {
   const about = useRef(null)
   const contact = useRef(null)
 
-  // const breakpoint = 768;
-  // const [size, setSize] = useState({
-  //   x: window.innerWidth
-  // });
-  // const updateSize = () =>
-  //   setSize({
-  //     x: window.innerWidth
-  //   });
-  // useEffect(() => (window.onresize = updateSize), []);
+  const breakpoint = 768;
+  const [size, setSize] = useState({
+    x: window.innerWidth
+  });
+  const updateSize = () =>
+    setSize({
+      x: window.innerWidth
+    });
+  useEffect(() => (window.onresize = updateSize), []);
   return (
     <>
       <Helmet>
@@ -36,11 +36,15 @@ function App() {
       <Navbar services={services}  projects={projects} about={about} contact={contact} />
       <Home />
       <Services services={services} />
-      {/* {(size.x > breakpoint) ? */}
-      <Projects projects={projects} /> 
-      {/* :
-      <Projectsmobile projects={projects} /> */}
-      {/* } */}
+      {(size.x > breakpoint) ?
+      <div>
+        <Projects projects={projects} /> 
+      </div>
+       :
+      <div>
+        <Projectsmobile projects={projects} />
+      </div>
+      }
       <About about={about} />
       <About2 />
       <Contact contact={contact} />
