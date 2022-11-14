@@ -30,7 +30,7 @@ const Home = () => {
     disableScrolling()
     setTimeout( loadingfunc , 3000)
     // eslint-disable-next-line
-  },[loadingfunc])
+  },[])
 
 
 
