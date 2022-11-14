@@ -1,5 +1,5 @@
 import React from 'react';
-import { hydrate, render } from "react-dom";
+import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
@@ -46,7 +46,8 @@ const pageheading3 = "FASHION FILMS"
 const pageheading4 = "SHORT / DOCUMENTARY / TRAVEL FILMS"
 const pageheading5 = "BEHIND THE SCENES"
 
-const APP = (
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
     <BrowserRouter>
         <Routes>
             <Route exact path='/' element={<App />} />
@@ -58,10 +59,3 @@ const APP = (
         </Routes>
     </BrowserRouter>
 );
-
-const rootElement = document.getElementById("root");
-if (rootElement.hasChildNodes()) {
-  hydrate(APP, rootElement);
-} else {
-  render(APP, rootElement);
-}
