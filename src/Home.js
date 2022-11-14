@@ -28,9 +28,9 @@ const Home = () => {
   useEffect(()=>{
     document.body.style.overflowY = "hidden";
     disableScrolling()
-    setTimeout( loadingfunc , 10000)
+    setTimeout( loadingfunc , 3000)
     // eslint-disable-next-line
-  },[])
+  },[loadingfunc])
 
   const handleTop = () =>{
     window.scrollTo({top: 0, behavior: 'smooth'});
