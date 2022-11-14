@@ -46,22 +46,22 @@ const Contact = (props) => {
           <div className='footerDiv1'>
             <div className='footerDiv1Line1'>
               <Zoom><img src={icon8} alt={icon8} /></Zoom>
-              <p>Our Location &nbsp;:&nbsp;</p>
+              <p>Our Location :</p>
             </div>
             <div className='footerDiv1Line2'>
-              <p>Google Map Link &nbsp;:&nbsp;</p>
+              <p>Google Map Link :</p>
               <a href='https://goo.gl/maps/xVy3CojHCUCg5jNW6' target="_blank" rel="noreferrer"><Zoom><img src={icon7} alt={icon7} /></Zoom></a>
             </div>
-            <p>Our Address &nbsp;:&nbsp; House no. 1 (2nd floor), Asomi Path Railway colony road, Hatigarh Chariali Hatigarh, Guwahati, Assam , 781021</p>
+            <p>Our Address : House no. 1 (2nd floor), Asomi Path Railway colony road, Hatigarh Chariali Hatigarh, Guwahati, Assam , 781021</p>
           </div>
           <div className='footerDiv2'>
           <div className='footerDiv2Line'>
             <Zoom><img src={icon9} alt={icon9} /></Zoom>
-            <p>Email us &nbsp;:&nbsp; ekodaproductions@gmail.com</p>
+            <p>Email us : ekodaproductions@gmail.com</p>
           </div>
           <div className='footerDiv2Line'>
             <Zoom><img src={icon10} alt={icon10} /></Zoom>
-            <p>Call us &nbsp;:&nbsp; +919577479901</p>
+            <p>Call us : +919577479901</p>
           </div>
             <div className='footericonImages'>
               <a href='https://www.youtube.com/channel/UCnWLao6UvXoNSupz5jiDMiA' target='_blank' rel="noreferrer"><Zoom><img src={icon1} alt={icon1} /></Zoom></a>

@@ -1,12 +1,12 @@
 import { Helmet } from "react-helmet";
 import { useRef } from "react";
 import useMediaQuery from "./useMediaQuery";
-import Navbar from "./Navbar"
+import Navbar from "./Navbar";
 import Home from "./Home";
-import Services from "./Services"
-import Projects from "./Projects"
-import About from "./About"
-import Contact from "./Contact"
+import Services from "./Services";
+import Projects from "./Projects";
+import About from "./About";
+import Contact from "./Contact";
 import Projectsmobile from "./Projectsmobile";
 import About2 from "./About2";
 
