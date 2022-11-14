@@ -68,10 +68,13 @@ const Home = () => {
     }
        
     { (loading === true) ?
-      <div className='loadingpageContainer'>
+      <div> 
+        <div className='loadingpageContainer'>
           <img id='logoImageLoading' src={logo} alt={logo} />
           <img src={loadinggif} alt={loadinggif} />
-      </div> :
+      </div>
+      </div>
+       :
       <div></div>
     }
     </>
