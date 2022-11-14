@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import "./Projectsmobile.css"
 import ReactPlayer from "react-player"
@@ -22,7 +22,7 @@ const Projectsmobile = (props) => {
         <p>OUR PROJECTS</p>
       </div>
       <div className='projectsmobilepageContent'>
-        {size.x > breakpoint ?
+        {(size.x > breakpoint) ?
           <>
           <Zoom><ReactPlayer className='eachVideoMobile' url='https://www.youtube.com/watch?v=-bpQpsO7mWs' controls width="480px" height="360px" /></Zoom>
           <Zoom><ReactPlayer className='eachVideoMobile' url='https://www.youtube.com/watch?v=qWxFXk5CWJQ' controls width="480px" height="360px"/></Zoom>          
