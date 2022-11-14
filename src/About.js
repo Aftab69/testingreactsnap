@@ -2,7 +2,6 @@ import React from 'react'
 import "./About.css"
 import Zoom from 'react-reveal/Zoom'
 
-
 const About = (props) => {
   return (
     <>

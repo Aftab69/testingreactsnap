@@ -32,6 +32,7 @@ const Home = () => {
 //     // eslint-disable-next-line
 //   },[loadingfunc])
 
+
   const handleTop = () =>{
     window.scrollTo({top: 0, behavior: 'smooth'});
   }
@@ -73,6 +74,3 @@ const Home = () => {
 }
 
 export default Home
-
-{/* <video src={showreel} autoPlay loop muted /> */}
-{/* <video src={showreelmobile} autoPlay loop muted /> */}
