@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom';
 import "./Projectsmobile.css"
 import ReactPlayer from "react-player"
@@ -6,15 +6,15 @@ import ReactPlayer from "react-player"
 import Zoom from 'react-reveal/Zoom';
 
 const Projectsmobile = (props) => {
-  const breakpoint = 480;
-  const [size, setSize] = useState({
-    x: window.innerWidth
-  });
-  const updateSize = () =>
-    setSize({
-      x: window.innerWidth
-    });
-  useEffect(() => (window.onresize = updateSize), []);
+  // const breakpoint = 480;
+  // const [size, setSize] = useState({
+  //   x: window.innerWidth
+  // });
+  // const updateSize = () =>
+  //   setSize({
+  //     x: window.innerWidth
+  //   });
+  // useEffect(() => (window.onresize = updateSize), []);
   // const matches = useMediaQuery("(min-width: 480px)");
   return (
     <div className='projectsmobilepageContainer' id='projects' ref={props.projects}>
@@ -22,19 +22,17 @@ const Projectsmobile = (props) => {
         <p>OUR PROJECTS</p>
       </div>
       <div className='projectsmobilepageContent'>
-        {(size.x > breakpoint) ?
-          <>
+        {/* {(size.x > breakpoint) ? */}
           <Zoom><ReactPlayer className='eachVideoMobile' url='https://www.youtube.com/watch?v=-bpQpsO7mWs' controls width="480px" height="360px" /></Zoom>
           <Zoom><ReactPlayer className='eachVideoMobile' url='https://www.youtube.com/watch?v=qWxFXk5CWJQ' controls width="480px" height="360px"/></Zoom>          
           <Zoom><ReactPlayer className='eachVideoMobile' url='https://www.youtube.com/watch?v=s2xr1_Pr_6U' controls width="480px" height="360px"/></Zoom>
-          </>
-          :
+          {/* :
           <>
           <Zoom><ReactPlayer className='eachVideoMobile' url='https://www.youtube.com/watch?v=-bpQpsO7mWs' controls width="320px" height="200px" /></Zoom>
           <Zoom><ReactPlayer className='eachVideoMobile' url='https://www.youtube.com/watch?v=qWxFXk5CWJQ' controls width="320px" height="200px"/></Zoom>          
           <Zoom><ReactPlayer className='eachVideoMobile' url='https://www.youtube.com/watch?v=s2xr1_Pr_6U' controls width="320px" height="200px"/></Zoom>
-          </>
-         }
+          </> */}
+         {/* } */}
          <Link to='/musicvideos'><button>View More</button></Link>
         </div>  
       </div>
