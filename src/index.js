@@ -57,7 +57,7 @@ const APP = (
             <Route exact path='/behindthescenes' element={<Categoryvideos data={behindTheScenes} pageheading={pageheading5} />}/>
         </Routes>
     </BrowserRouter>
-);
+)
 
 const rootElement = document.getElementById("root");
 if (rootElement.hasChildNodes()) {
