@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet";
 import { useRef } from "react";
-import useMediaQuery from "./useMediaQuery";
+// import useMediaQuery from "./useMediaQuery";
 import Navbar from "./Navbar";
 import Home from "./Home";
 import Services from "./Services";
@@ -17,7 +17,8 @@ function App() {
   const about = useRef(null)
   const contact = useRef(null)
 
-  const matches = useMediaQuery("(min-width: 769px)");
+  const width  = window.innerWidth;
+  const breakpoint = 768;
   return (
     <>
       <Helmet>
@@ -28,7 +29,7 @@ function App() {
       <Navbar services={services}  projects={projects} about={about} contact={contact} />
       <Home />
       <Services services={services} />
-      {(matches)?
+      {width > breakpoint ?
       <Projects projects={projects} /> 
       :
       <Projectsmobile projects={projects} />
