@@ -6,8 +6,15 @@ import ReactPlayer from "react-player"
 import Zoom from 'react-reveal/Zoom';
 
 const Projectsmobile = (props) => {
-  const width  = window.innerWidth;
   const breakpoint = 480;
+  const [size, setSize] = useState({
+    x: window.innerWidth
+  });
+  const updateSize = () =>
+    setSize({
+      x: window.innerWidth
+    });
+  useEffect(() => (window.onresize = updateSize), []);
   // const matches = useMediaQuery("(min-width: 480px)");
   return (
     <div className='projectsmobilepageContainer' id='projects' ref={props.projects}>
@@ -15,7 +22,7 @@ const Projectsmobile = (props) => {
         <p>OUR PROJECTS</p>
       </div>
       <div className='projectsmobilepageContent'>
-        {width > breakpoint ?
+        {size.x > breakpoint ?
           <>
           <Zoom><ReactPlayer className='eachVideoMobile' url='https://www.youtube.com/watch?v=-bpQpsO7mWs' controls width="480px" height="360px" /></Zoom>
           <Zoom><ReactPlayer className='eachVideoMobile' url='https://www.youtube.com/watch?v=qWxFXk5CWJQ' controls width="480px" height="360px"/></Zoom>          

@@ -26,6 +26,7 @@ function App() {
       x: window.innerWidth
     });
   useEffect(() => (window.onresize = updateSize), []);
+  console.log(window.innerWidth)
   return (
     <>
       <Helmet>
@@ -36,7 +37,7 @@ function App() {
       <Navbar services={services}  projects={projects} about={about} contact={contact} />
       <Home />
       <Services services={services} />
-      {size.x > breakpoint ?
+      {(size.x > breakpoint) ?
       <Projects projects={projects} /> 
       :
       <Projectsmobile projects={projects} />
