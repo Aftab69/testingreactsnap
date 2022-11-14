@@ -28,10 +28,10 @@ function App() {
       <Navbar services={services}  projects={projects} about={about} contact={contact} />
       <Home />
       <Services services={services} />
-      {(matches)?
+      {/* {(matches)?
       <Projects projects={projects} /> :
       <Projectsmobile projects={projects} />
-      }
+      } */}
       <About about={about} />
       <About2 />
       <Contact contact={contact} />
