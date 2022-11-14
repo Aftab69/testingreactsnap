@@ -3,34 +3,34 @@ import "./Home.css"
 import useMediaQuery from "./useMediaQuery"
 // import showreel from "./Images/Showreel.mp4"
 // import showreelmobile from "./Images/showreelmobile.mp4"
-// import loadinggif from "./Images/loading.gif"
-// import logo from "./Images/logo.png"
+import loadinggif from "./Images/loading.gif"
+import logo from "./Images/logo.png"
 import icon1 from "./Images/scrolltopicon.png"
 
 const Home = () => {
 
   const matches = useMediaQuery("(min-width: 769px)");
 
-//   const disableScrolling = () =>{
-//     var x=window.scrollX;
-//     var y=window.scrollY;
-//     window.onscroll=function(){window.scrollTo(x, y);};
-// }
-//   const enableScrolling = () =>{
-//     window.onscroll=function(){};
-// }
-//   const [ loading, setLoading ] = useState(true)
-//   const loadingfunc = () =>{
-//     setLoading(false)
-//     enableScrolling()
-//     document.body.style.overflowY = "scroll";
-//   }
-//   useEffect(()=>{
-//     document.body.style.overflowY = "hidden";
-//     disableScrolling()
-//     setTimeout( loadingfunc , 3000)
-//     // eslint-disable-next-line
-//   },[loadingfunc])
+  const disableScrolling = () =>{
+    var x=window.scrollX;
+    var y=window.scrollY;
+    window.onscroll=function(){window.scrollTo(x, y);};
+}
+  const enableScrolling = () =>{
+    window.onscroll=function(){};
+}
+  const [ loading, setLoading ] = useState(true)
+  const loadingfunc = () =>{
+    setLoading(false)
+    enableScrolling()
+    document.body.style.overflowY = "scroll";
+  }
+  useEffect(()=>{
+    document.body.style.overflowY = "hidden";
+    disableScrolling()
+    setTimeout( loadingfunc , 3000)
+    // eslint-disable-next-line
+  },[loadingfunc])
 
 
 
@@ -67,13 +67,13 @@ const Home = () => {
     </div>
     }
        
-    {/* { loading === true ?
+    { (loading === true) ?
       <div className='loadingpageContainer'>
           <img id='logoImageLoading' src={logo} alt={logo} />
           <img src={loadinggif} alt={loadinggif} />
       </div> :
       <></>
-    } */}
+    }
     </>
   )
 }
