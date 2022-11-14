@@ -1,15 +1,15 @@
 import React from 'react'
 import "./Home.css"
-import useMediaQuery from "./useMediaQuery";
+// import useMediaQuery from "./useMediaQuery";
 import showreel from "./Images/Showreel.mp4"
-import showreelmobile from "./Images/showreelmobile.mp4"
+// import showreelmobile from "./Images/showreelmobile.mp4"
 // import loadinggif from "./Images/loading.gif"
 // import logo from "./Images/logo.png"
 import icon1 from "./Images/scrolltopicon.png"
 
 const Home = () => {
 
-  const matches = useMediaQuery("(min-width: 769px)");
+  // const matches = useMediaQuery("(min-width: 769px)");
 
 //   const disableScrolling = () =>{
 //     var x=window.scrollX;
@@ -38,7 +38,7 @@ const Home = () => {
 
   return (
     <>
-    {(matches) ?
+    {/* {(matches) ? */}
       <>
       <div id='homepage' className='homepageContainer'>
       <video src={showreel} autoPlay loop muted />
@@ -50,16 +50,16 @@ const Home = () => {
       <img onClick={handleTop} src={icon1} alt={icon1} />
      </div>
      </>
-     :
-     <>
-      <div id='homepage' className='homepageContainer'>
-      <video src={showreelmobile} autoPlay loop muted />
-      </div>
-      <div className='showreelButtonContainerMobile'>
-      <a href='https://www.youtube.com/watch?v=siXxsNosnGs' target="_blank" rel="noreferrer"><button id='showreelButton'>WATCH SHOWREEL</button></a>
-      </div>
-    </>
-    }
+    {/* //  :
+    //  <>
+    //   <div id='homepage' className='homepageContainer'>
+    //   <video src={showreelmobile} autoPlay loop muted />
+    //   </div>
+    //   <div className='showreelButtonContainerMobile'>
+    //   <a href='https://www.youtube.com/watch?v=siXxsNosnGs' target="_blank" rel="noreferrer"><button id='showreelButton'>WATCH SHOWREEL</button></a>
+    //   </div>
+    // </>
+    // } */}
        
     {/* { loading === true ?
       <div className='loadingpageContainer'>
