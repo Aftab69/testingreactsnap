@@ -17,7 +17,7 @@ function App() {
   const about = useRef(null)
   const contact = useRef(null)
 
-  const matches = useMediaQuery("(min-width: 769px)");
+  // const matches = useMediaQuery("(min-width: 769px)");
   return (
     <>
       <Helmet>
