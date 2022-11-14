@@ -72,7 +72,7 @@ const Home = () => {
           <img id='logoImageLoading' src={logo} alt={logo} />
           <img src={loadinggif} alt={loadinggif} />
       </div> :
-      <></>
+      <div></div>
     }
     </>
   )
