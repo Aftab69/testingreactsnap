@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import "./Home.css"
 import useMediaQuery from "./useMediaQuery"
 // import showreel from "./Images/Showreel.mp4"
